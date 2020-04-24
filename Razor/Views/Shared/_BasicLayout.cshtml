@@ -1,14 +1,12 @@
-﻿@model Product
-@{
-    Layout = null;
-}
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
+    <title>@ViewBag.Title</title>
 </head>
 <body>
-    @Model.Name
+    <div>
+        @RenderBody()
+    </div>
 </body>
 </html>
